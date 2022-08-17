@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Escuadra",
+    "precio": "123.45",
+    "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
+  },
+  {
+    "nombre": "Calculadora",
+    "precio": 234.56,
+    "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
+  },
+  {
+    "nombre": "Globo Terraqueo",
+    "precio": 345.67,
+    "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
+  },
+  {
+    "nombre": "Escuadra",
+    "precio": "123.45",
+    "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
+  },
+  {
+    "nombre": "Calculadora",
+    "precio": 234.56,
+    "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
+  },
+  {
+    "nombre": "Globo Terraqueo",
+    "precio": 345.67,
+    "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
+  }
+]
