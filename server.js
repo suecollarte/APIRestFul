@@ -169,16 +169,16 @@ app.get('/api/productos', (req, res)=>{
     res.status(200).json(DB_PRODUCTOS);
 });
 
-app.get('/api/productos/:id', (req, res)=>{
+app.get("/api/productos/:id", (req, res)=>{
     try {
-        const id = req.params.id+0;
+        const id = req.params.id;
         
-        //const indexObj = arr.findIndex((o)=> o.id == id);
+        const indexObj = DB_PRODUCTOS.findIndex((o)=> o.id == id);
         
         if (id == -1) {
             res.status(404).json({code: 404, msg: `Producto ${id} no encontrado`})
         } 
-        res.status(200).json(arr[id]);
+        res.status(200).json(DB_PRODUCTOS[id]);
     } catch (error) {
         console.log(error)
         res.status(500).json({code: 500, msg: `Error al obtener ${req.method} ${req.url}`});
