@@ -1,0 +1,36 @@
+{
+  "name": "collarteserver",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.20.0",
+    "debug": "^2.6.9",
+    "depd": "^2.0.0",
+    "ee-first": "^1.1.1",
+    "ms": "^2.0.0",
+    "on-finished": "^2.3.0",
+    "on-headers": "^1.0.2",
+    "safe-buffer": "^5.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suecollarte/APIRestFul.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suecollarte/APIRestFul/issues"
+  },
+  "homepage": "https://github.com/suecollarte/APIRestFul#readme",
+  "description": ""
+}
