@@ -7,31 +7,37 @@ const routerProducto = Router();
 
     const DB_PRODUCTOS=[
         {
+          "id":1,
           "nombre": "Escuadra",
           "precio": "123.45",
           "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
         },
         {
+          "id":2,
           "nombre": "Calculadora",
           "precio": 234.56,
           "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
         },
         {
+          "id":3,
           "nombre": "Globo Terraqueo",
           "precio": 345.67,
           "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
         },
         {
+          "id":4,
           "nombre": "Escuadra",
           "precio": "123.45",
           "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
         },
         {
+          "id":5,
           "nombre": "Calculadora",
           "precio": 234.56,
           "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
         },
         {
+          "id":6,
           "nombre": "Globo Terraqueo",
           "precio": 345.67,
           "thumbail": "https://cdn3.iconfinder.com/data/icons/education/64/ruler-trianglestationary-school-256.png"
@@ -43,8 +49,8 @@ routerProducto.get("/", (req, res) => {
   res.status(200).json(DB_PRODUCTOS);
 });
 
-routerProducto.post("/api/productos", (req, res) => {
-    const { nombre, precio, thumbail } = req.body;
+routerProducto.post("/", (req, res) => {
+    //const { nombre, precio, thumbail } = req.body; no es necesario hacer esto
     DB_PRODUCTOS.push.apply(req.body);
     res.status(201).json({ code: 201, msg: `Producto guardado con exito` });
   });
@@ -58,7 +64,7 @@ let respuesta = {
 };
 
 
-routerProducto.get("/api/productos/:id", (req, res) => {
+routerProducto.get("/:id", (req, res) => {
   try {
     const id = req.params.id;
 
@@ -77,8 +83,8 @@ routerProducto.get("/api/productos/:id", (req, res) => {
 });
 
 
-routerProducto.put("/api/productos/:id", (req, res) => {
-  const { nombre, precio } = req.body;
+routerProducto.put("/:id", (req, res) => {
+  //const { nombre, precio } = req.body;
   if (!req.body.nombre) {
     respuesta = {
       error: true,
@@ -105,7 +111,7 @@ routerProducto.put("/api/productos/:id", (req, res) => {
   res.status(201).json(respuesta);
 });
 
-routerProducto.delete("/api/productos/:id", (req, res) => {
+routerProducto.delete("/:id", (req, res) => {
   try {
     const id = req.params.id;
     const j = id;
